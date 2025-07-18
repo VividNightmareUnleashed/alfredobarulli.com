@@ -400,6 +400,105 @@ h1 u::after {
     letter-spacing: 1px;
 }
 
+/* Book Showcase Section */
+.book-showcase {
+    margin-top: 80px;
+    padding: 60px 0;
+}
+
+.book-showcase-inner {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 60px;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.book-cover {
+    position: relative;
+}
+
+.book-cover img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 
+        0 25px 50px rgba(0, 0, 0, 0.5),
+        0 0 0 1px rgba(186, 142, 56, 0.2);
+    transition: all 0.3s ease;
+}
+
+.book-cover:hover img {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 
+        0 35px 70px rgba(0, 0, 0, 0.6),
+        0 0 0 2px rgba(186, 142, 56, 0.4),
+        0 0 40px rgba(186, 142, 56, 0.2);
+}
+
+.bestseller-badge {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background: #E7AF3E;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 8px 20px rgba(231, 175, 62, 0.4);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 8px 20px rgba(231, 175, 62, 0.4);
+    }
+    50% {
+        box-shadow: 0 8px 30px rgba(231, 175, 62, 0.6);
+    }
+    100% {
+        box-shadow: 0 8px 20px rgba(231, 175, 62, 0.4);
+    }
+}
+
+.book-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #E7AF3E;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+
+.book-subtitle {
+    font-size: 20px;
+    color: #CCC;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.book-description {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #F1F4F4;
+    margin-bottom: 35px;
+}
+
+.book-cta {
+    background: #E7AF3E;
+    color: #000;
+    font-weight: 600;
+}
+
+.book-cta:hover {
+    background: #BA8E38;
+    color: #fff;
+}
+
 /* Companies Grid */
 .companies-section h2 {
     font-size: 36px;
@@ -541,6 +640,25 @@ h1 u::after {
         grid-template-columns: 1fr;
         gap: 20px;
     }
+    
+    .book-showcase-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .book-cover {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .book-content h3 {
+        font-size: 36px;
+    }
+    
+    .book-subtitle {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 640px) {
@@ -555,5 +673,29 @@ h1 u::after {
 
     .company-card {
         padding: 25px;
+    }
+    
+    .book-showcase {
+        margin-top: 60px;
+        padding: 40px 0;
+    }
+    
+    .book-cover {
+        max-width: 250px;
+    }
+    
+    .book-content h3 {
+        font-size: 32px;
+    }
+    
+    .bestseller-badge {
+        font-size: 12px;
+        padding: 8px 16px;
+        top: -10px;
+        right: -10px;
+    }
+    
+    .book-description {
+        font-size: 15px;
     }
 }
