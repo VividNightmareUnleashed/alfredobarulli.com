@@ -306,6 +306,10 @@ h1 u::after {
     background: #BA8E38;
 }
 
+.hero-section h1 {
+    text-align: center;
+}
+
 .description {
     font-size: 18px;
     line-height: 1.8;
@@ -495,6 +499,35 @@ h1 u::after {
     color: #fff;
 }
 
+/* Alfredo Photo in Bio Section */
+.alfredo-photo-wrapper {
+    margin: 30px auto 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.alfredo-photo {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 4px solid rgba(186, 142, 56, 0.3);
+    box-shadow: 
+        0 30px 60px rgba(0, 0, 0, 0.5),
+        0 0 0 1px rgba(186, 142, 56, 0.2);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.alfredo-photo:hover {
+    border-color: #BA8E38;
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 
+        0 40px 80px rgba(0, 0, 0, 0.6),
+        0 0 0 3px rgba(186, 142, 56, 0.4),
+        0 0 40px rgba(186, 142, 56, 0.3);
+}
+
 /* Companies Grid */
 .companies-section h2 {
     font-size: 36px;
@@ -652,6 +685,10 @@ h1 u::after {
     .book-subtitle {
         font-size: 18px;
     }
+
+    .alfredo-photo-wrapper {
+        margin: 20px auto 30px;
+    }
 }
 
 @media (max-width: 640px) {
@@ -692,5 +729,14 @@ h1 u::after {
     
     .book-description {
         font-size: 15px;
+    }
+
+    .alfredo-photo-wrapper {
+        margin: 15px auto 25px;
+    }
+
+    .alfredo-photo {
+        border-radius: 8px;
+        border-width: 3px;
     }
 }
