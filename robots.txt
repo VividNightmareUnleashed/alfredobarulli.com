@@ -1,0 +1,15 @@
+# Robots.txt for alfredobarulli.com
+
+# Allow all bots to crawl the site
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://alfredobarulli.com/sitemap.xml
+
+# Crawl delay (optional - prevents server overload)
+Crawl-delay: 1
+
+# Block access to internal assets if needed
+# Disallow: /admin/
+# Disallow: /private/
